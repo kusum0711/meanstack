@@ -1,4 +1,4 @@
-# Category MANAGEMENT
+# CATEGORY MANAGEMENT
 M - Mongodb <br/>
 E - Express  <br/>
 A - Angular  <br/>
