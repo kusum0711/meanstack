@@ -5,5 +5,5 @@
   - ng serve --open to run the angular app
 + Start the MEAN stack backend
   - cd backend to enter in backend folder
-  - node index to start node server
+  - node index to start the node server
   - mongod to start mongoDB shell
