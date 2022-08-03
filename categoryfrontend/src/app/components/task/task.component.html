@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Category</title>
+    </head>
+
+    <body>
+        <p id="demo"></p>
+        <div class="blockbox">
+
+        
+
+        <table>
+                <td>
+                    <form novalidate #f="ngForm" (ngSubmit)="saveData(f)" >
+                    
+                    <div class="form-group"
+        
+                    [ngClass]="{
+                     'has-danger': Categoryid.invalid && (Categoryid.dirty || Categoryid?.touched),
+                     'has-success': Categoryid?.valid && (Categoryid?.dirty || Categoryid?.touched)
+                }">
+
+                        <label for="Categoryid">Categoryid :</label>
+                        <input type="number" id="Categoryid" name="_id" placeholder="Enter Categoryid"
+                        [(ngModel)]="category.Categoryid"
+                        required
+                        #Categoryid ="ngModel">
+                        <!-- <label id="prodId_errorMsg"></label> -->
+                        <div class="form-control-feedback"
+                        *ngIf="Categoryid.errors && (Categoryid.dirty || Categoryid.touched)">
+                     <p *ngIf="Categoryid.errors?.['required']">Categoryid is required</p>
+                   </div>
+                        <br><br>
+                    </div>
+                    <div class="form-group"
+        
+                    [ngClass]="{
+                     'has-danger': Categoryname.invalid && (Categoryname.dirty || Categoryname?.touched),
+                     'has-success': Categoryname?.valid && (Categoryname?.dirty || Categoryname?.touched)
+                }">
+
+                        <label for="Categoryname">Categoryname :</label>
+                        <input type="text" id="Categoryname" name="Categoryname" placeholder="Enter Categoryname"
+                        [(ngModel)]="category.Categoryname"
+                        required
+                        #Categoryname ="ngModel">
+                        <div class="form-control-feedback"
+                        *ngIf="Categoryname.errors && (Categoryname.dirty || Categoryname.touched)">
+                     <p *ngIf="Categoryname.errors?.['required']">Categoryname is required</p>
+                   </div>
+                        <br><br>
+                    </div>
+                    <div class="form-group"
+        
+                    [ngClass]="{
+                     'has-danger': Categorydescription.invalid && (Categorydescription.dirty || Categorydescription?.touched),
+                     'has-success': Categorydescription?.valid && (Categorydescription?.dirty || Categorydescription?.touched)
+                }">
+
+                        <label for="Categorydescription">CategoryDescription :</label>
+                        <input type="textarea" id="Categorydescription" name="Categorydescription" placeholder="Enter Categorydescription"
+                        [(ngModel)]="category.Categorydescription"
+                        required
+                        #Categorydescription ="ngModel">
+                        <div class="form-control-feedback"
+                        *ngIf="Categorydescription.errors && (Categorydescription.dirty || Categorydescription.touched)">
+                     <p *ngIf="Categorydescription.errors?.['required']">Categorydescription is required</p>
+                   </div>
+                        <br><br>
+                    </div>
+                   
+                            <button  id="save_btn" class="btn" [disabled]="f.invalid">{{editMode? 'update':'Submit'   }}</button>
+                            <!--button type="button" (click)="resetUserForm(f)">Reset</button--> 
+        </form>
+    
+                </td>
+                </table>
+        </div>
+            </body>
+            </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Category </title>
+    </head>
+    <body>
+        <div class="container my-4">
+            <!--h3 class="text-center my-3">Category Table</h3-->
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Categoryid </th>
+                    <th scope="col">CategoryName </th>
+                    <th scope="col">CategoryDescription </th>
+                   
+                    <!-- <th scope="col">Created date</th> -->
+                    <th scope="col">Action</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr *ngFor="let category of categories">
+                    <th scope="row">{{category.Categoryid}}</th>
+                    <td>{{category.Categoryname}}</td>
+                    <td>{{category.Categorydescription}}</td>
+                   
+                     <!-- <td>{{product.createddate}}</td> -->
+                    <td><button id="edit" class="btn btn-success" (click)="edited(category)">edit</button></td>
+                    <td><button id="delete" class="btn btn-primary btn-danger" (click)="deleted(category)">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

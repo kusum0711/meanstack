@@ -1,0 +1,15 @@
+body > table{
+    width: 800%;
+}
+.table{
+    border: none;
+}
+table.list{
+    width:100%;
+}
+td, th {
+   
+    text-align: left;
+    padding: 8px;
+}
+

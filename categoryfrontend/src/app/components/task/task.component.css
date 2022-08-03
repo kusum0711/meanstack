@@ -1,0 +1,54 @@
+
+.btn{
+    border: 1px solid gray;
+    border-radius: 6px;
+    margin: 13px 0px 33px 0px;
+    background: lightsteelblue;
+    position: relative;
+    /* height: 20px; */
+    /* width: 40px; */
+    padding: 10px 20px 10px 20px;
+    
+        
+}
+label {
+    
+    display: block;
+    padding: 10px 0px 10px 0px;
+    font-weight: bold;
+    font-size: 17px;
+  }
+.form-control-feedback{
+    
+    
+    
+    color:red;
+   
+}
+.form-group{
+    margin: 0px;    
+} 
+input[type=text], input[type=number], input[type=textarea]{
+    width: 572px;
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 6px;
+    background: #f1f1f1;
+}
+
+.blockbox{
+    border: 2px solid rgb(233, 229, 229);
+    border-radius: 5px;
+    background-color: rgb(229, 227, 224);
+    margin: auto;
+    box-sizing: border-box;
+    padding-left: 60px;
+    width: 700px;
+    padding-top: 20px;
+    
+
+}
+
+
+
