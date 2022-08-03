@@ -1,4 +1,8 @@
 # Category Management
+M - Mongodb
+E - Express
+A - Angular
+N - Node
 ## How to run the App?
 + Start the MEAN stack frontend
   - cd frontend to enter in frontend folder
